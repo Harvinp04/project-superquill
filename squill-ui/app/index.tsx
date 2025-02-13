@@ -43,7 +43,7 @@ export default function Index() {
       const imageData = canvasRef.current.toBase64();
 
       try {
-        const response = await fetch("http://<REPLACE WITH YOUR IPV4 FOR LOCAL TESTING>/upload-image", {
+        const response = await fetch("http://192.168.1.18:8000/upload-image", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
